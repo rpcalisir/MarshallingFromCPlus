@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI", "ConsoleUI\ConsoleUI.csproj", "{AF8EFB83-6749-4B62-85DB-46F07CC48D08}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EE06A133-A539-4485-A7CE-D1DFBB511F90} = {EE06A133-A539-4485-A7CE-D1DFBB511F90}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NativeLibrary", "NativeLibrary\NativeLibrary.vcxproj", "{EE06A133-A539-4485-A7CE-D1DFBB511F90}"
 EndProject
@@ -17,8 +20,8 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AF8EFB83-6749-4B62-85DB-46F07CC48D08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF8EFB83-6749-4B62-85DB-46F07CC48D08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8EFB83-6749-4B62-85DB-46F07CC48D08}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{AF8EFB83-6749-4B62-85DB-46F07CC48D08}.Debug|Any CPU.Build.0 = Debug|x64
 		{AF8EFB83-6749-4B62-85DB-46F07CC48D08}.Debug|x64.ActiveCfg = Debug|Any CPU
 		{AF8EFB83-6749-4B62-85DB-46F07CC48D08}.Debug|x64.Build.0 = Debug|Any CPU
 		{AF8EFB83-6749-4B62-85DB-46F07CC48D08}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -29,7 +32,8 @@ Global
 		{AF8EFB83-6749-4B62-85DB-46F07CC48D08}.Release|x64.Build.0 = Release|Any CPU
 		{AF8EFB83-6749-4B62-85DB-46F07CC48D08}.Release|x86.ActiveCfg = Release|Any CPU
 		{AF8EFB83-6749-4B62-85DB-46F07CC48D08}.Release|x86.Build.0 = Release|Any CPU
-		{EE06A133-A539-4485-A7CE-D1DFBB511F90}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{EE06A133-A539-4485-A7CE-D1DFBB511F90}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{EE06A133-A539-4485-A7CE-D1DFBB511F90}.Debug|Any CPU.Build.0 = Debug|x64
 		{EE06A133-A539-4485-A7CE-D1DFBB511F90}.Debug|x64.ActiveCfg = Debug|x64
 		{EE06A133-A539-4485-A7CE-D1DFBB511F90}.Debug|x64.Build.0 = Debug|x64
 		{EE06A133-A539-4485-A7CE-D1DFBB511F90}.Debug|x86.ActiveCfg = Debug|Win32

@@ -10,7 +10,9 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
+            Wrapper.HelloWorld();
 
+            Console.ReadLine();
         }
     }
 }
