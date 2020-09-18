@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.InteropServices;
+
 
 namespace ConsoleApp
 {
@@ -11,5 +7,8 @@ namespace ConsoleApp
     {
         [DllImport("NativeLibrary.dll")]
         public static extern void HelloWorld();
+
+        [DllImport("NativeLibrary.dll", EntryPoint = "Add")]
+        public static extern int AddNumbers(int firstNumber, int secondNumber);
     }
 }

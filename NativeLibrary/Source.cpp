@@ -1,14 +1,15 @@
 #include <iostream>
 
 extern "C" __declspec(dllexport) void HelloWorld();
+extern "C" __declspec(dllexport) int Add(int, int);
+
 
 void HelloWorld()
 {
 	std::cout << "Hello World";
 }
 
-struct Shoe
+int Add(int a, int b)
 {
-	int id;
-
-};
+	return a + b;
+}
