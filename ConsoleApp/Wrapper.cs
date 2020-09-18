@@ -8,7 +8,11 @@ namespace ConsoleApp
         [DllImport("NativeLibrary.dll")]
         public static extern void HelloWorld();
 
+        //EntryPoint specifies which method to look for in C++ dll
         [DllImport("NativeLibrary.dll", EntryPoint = "Add")]
         public static extern int AddNumbers(int firstNumber, int secondNumber);
+
+        [DllImport("NativeLibrary.dll")]
+        public static extern bool IsLengthGreaterThanFive(string value);
     }
 }

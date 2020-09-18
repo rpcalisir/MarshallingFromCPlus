@@ -12,6 +12,8 @@ namespace ConsoleApp
 
             Console.WriteLine("Sum of two numbers 5+6: " + Wrapper.AddNumbers(5, 6));
 
+            Console.WriteLine(Wrapper.IsLengthGreaterThanFive("thisis"));
+
 
             Console.ReadLine();
         }
